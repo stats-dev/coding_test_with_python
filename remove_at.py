@@ -18,10 +18,21 @@ class LinkedList(object):
 
     def remove(self,idx):
         current = self.head
-        for _ in range(idx-1):
-            current = current.next
-        current.next = current.next.next
 
+        if idx == 0:
+            self.head = current.next
+
+        else:
+            for _ in range(idx-2):
+                current = current.next
+            current.next = current.next.next
+
+    def print_all(self):
+        current = self.head
+        while current.next:
+            print(str(current.value) + ">", end = ' ')
+            current = current.next
+        print(current.value)
             
 
 ll = LinkedList()
@@ -31,6 +42,9 @@ ll.append(3)
 ll.append(4)
 ll.append(5)
 ll.remove(3)
+ll.print_all()
 
-ll.remove(2)
-ll.remove(2)
+#ll.remove(2)
+#ll.print_all()
+
+#ll.remove(2)
