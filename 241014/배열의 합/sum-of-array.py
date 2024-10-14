@@ -1,9 +1,8 @@
-n = 4
-
-x1 = [
-    sum(list(map(int, input().split())))
-    for _ in range(n)
+arr_2d = [
+    list(map(int, input().split()))
+    for _ in range(4)
 ]
 
-for i in x1:
-    print(i)
+# 각 줄의 합
+for i in range(4):
+    print(sum(arr_2d[i]))
