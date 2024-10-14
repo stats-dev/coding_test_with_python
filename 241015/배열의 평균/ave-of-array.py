@@ -15,4 +15,4 @@ for i in range(4):
     sum2 += sum1
     print(sum1 / 2, end = ' ')
 print()
-print(sum2 / 8)
+print(round(sum2 / 8, 1))
