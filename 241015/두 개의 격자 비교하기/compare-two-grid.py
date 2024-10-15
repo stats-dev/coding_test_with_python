@@ -13,12 +13,12 @@ arr2 = [
 
 
 arr_diff = [
-    [0 for _ in range(n)]
+    [0 for _ in range(m)]
     for _ in range(n)
 ]
 
 for i in range(n):
-    for j in range(n):
+    for j in range(m):
         if arr1[i][j] != arr2[i][j]:
             arr_diff[i][j] += 1
 
