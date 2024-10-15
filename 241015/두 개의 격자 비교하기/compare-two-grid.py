@@ -1,4 +1,4 @@
-n, m = map(int, input().split())
+n, m = map(int, input().strip().split())
 
 arr1 = [
     list(map(int, input().split()))
