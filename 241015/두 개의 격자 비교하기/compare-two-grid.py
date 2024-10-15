@@ -18,7 +18,7 @@ arr_diff = [
 ]
 
 for i in range(n):
-    for j in range(m):
+    for j in range(n):
         if arr1[i][j] != arr2[i][j]:
             arr_diff[i][j] += 1
 
