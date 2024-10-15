@@ -1,32 +1,17 @@
-# n = 3
+n, m = tuple(map(int, input().split()))
 
-# arr_2d = [
-#     [0 for _ in range(n)]
-#     for _ in range(n)
-# ]
-
-# num = 1
-# for i in range(n):
-#     for j in range(n):
-#         arr_2d[i][j] = num
-#         num += 2
-
-# for row in arr_2d:
-#     for e in row:
-#         print(e, end= " ")
-#     print()
-
-a, b = map(int, input().split())
-
-arr_2d = [
-    [0 for _ in range(b)]
-    for _ in range(a)
+arr = [
+    [0 for _ in range(m)]
+    for _ in range(n)
 ]
 
-sum_val = 1
-for i in range(a):
-    for j in range(b):
-        arr_2d[i][j] = sum_val
-        print(arr_2d[i][j], end = " ")
-        sum_val += 1
+sum_v = 1
+for i in range(n):
+    for j in range(m):
+        arr[i][j] = sum_v
+        sum_v += 1
+
+for row in arr:
+    for ele in row:
+        print(ele, end = " ")
     print()
