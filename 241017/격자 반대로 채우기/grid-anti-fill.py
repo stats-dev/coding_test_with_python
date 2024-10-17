@@ -1,4 +1,7 @@
+# 입력
 n = int(input())
+# 번호
+num = 0
 
 arr1 = [
     [0 for _ in range(n)]
@@ -6,16 +9,19 @@ arr1 = [
 ]
 
 
-num = 1
-for i in range(n):
-    for j in range(n):
-        if n-j-1 > 0: 
-            arr1[n-j-1][n-i-1] = num
+for i in range(n): #열 단위 for loop
+    i = n-i # curr col num
+    if n % 2 == i % 2: ## 위로 올라가는 경우
+        for j in range(n):
+            j = n-j ## 행번호
             num += 1
-        else:
-            arr1[n-j-1][n-i-1] = num
+            arr1[j-1][i-1] = num
+    else:
+        for k in range(n): # 내려가기
+            num += 1
+            arr1[k][i-1] = num ##k는 증가하는 행.
             
-
+## 출력            
 for r in arr1:
     for e in r:
         print(e, end = " ")
