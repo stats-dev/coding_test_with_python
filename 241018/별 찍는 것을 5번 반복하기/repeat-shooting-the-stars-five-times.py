@@ -1,5 +1,6 @@
-def pring_5_stars():
+def print_10_stars():
     print("*" * 10)
 
 for _ in range(5):
-    pring_5_stars()
+    # 10개 찍는 함수를 5번 반복 호출
+    print_10_stars()
