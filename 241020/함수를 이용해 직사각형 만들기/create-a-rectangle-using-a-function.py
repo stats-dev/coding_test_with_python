@@ -10,4 +10,4 @@ def print_nm(n, m):
 
 n, m = tuple(map(int, input().split()))
 
-print_nm(2, 3)
+print_nm(n, m)
