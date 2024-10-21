@@ -10,7 +10,11 @@ a, b = tuple(map(int, input().split()))
 result = 0
 
 for i in range(a, b+1):
-    if is_prime(i) and i != 1:
+    if i == 1:
+        continue
+    elif is_prime(i):
         result += i
+    else:
+        continue
 
 print(result)
