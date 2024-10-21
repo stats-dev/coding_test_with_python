@@ -4,7 +4,7 @@ result = 0
 if o == '+':
     result = int(a) + int(c)
 elif o == '-':
-    result = int(a) + int(c)
+    result = int(a) - int(c)
 elif o == '/':
     result = int(a) / int(c)
 else:
