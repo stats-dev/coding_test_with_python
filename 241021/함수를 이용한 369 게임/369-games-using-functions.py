@@ -24,7 +24,7 @@ def is_threes(n):
     while n > 0:
         if n % 10 in threes:
             return True
-        n //= 10
+        n //= 10 ## 계속 나눠줘야 겨우 도달할 수 있구만.
 
 def is_sam(n):
     return (n % 3 == 0)
