@@ -21,7 +21,10 @@ a, b = tuple(map(int, input().split()))
 
 def is_threes(n):
     threes = [3, 6, 9]
-    return (n // 10) in threes or (n % 10) in threes or is_sam(n)
+    while n > 0:
+        if n % 10 in threes:
+            return True
+        n //= 10
 
 def is_sam(n):
     return (n % 3 == 0)
@@ -29,7 +32,7 @@ def is_sam(n):
 cnt = 0
 
 for i in range(a, b+1):
-    if is_threes(i):
+    if is_threes(i) or is_sam(i):
         cnt += 1
 
 print(cnt)
