@@ -1,9 +1,11 @@
+# def add(a, b, c=0):
+#     return a + b + c
+
+# print(add(1, 3))
+
 def min_args(*args):
-    #print(f"args: {args}")
     return min(args)
 
-a,b,c = map(int, input().split())
+numbers = tuple(map(int, input().split()))
 
-result = min_args(a,b,c)
-
-print(result)
+print(min(numbers))
