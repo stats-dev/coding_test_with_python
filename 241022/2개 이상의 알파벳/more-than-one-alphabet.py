@@ -7,7 +7,7 @@ def is_same(a):
             cnt += 1
     return cnt
 
-if is_same(a) > 2:
+if is_same(a) >= 2:
     print("Yes")
 else:
     print("No")
