@@ -4,7 +4,7 @@ def is_month(m, d):
     while m > 0 and m < 13:
         if m == 2 and d < 29:
             return True
-        if m % 2 == 0:
+        elif m % 2 == 0:
             return d < 32
         else:
             return d < 31
