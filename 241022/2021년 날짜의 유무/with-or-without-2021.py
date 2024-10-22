@@ -1,4 +1,4 @@
-M, D = map(int, input().split())
+m, d = map(int, input().split())
 
 # def is_month(m, d):
 #     throne = [1,3,5,7,8,10,12]
