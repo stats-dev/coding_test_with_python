@@ -32,7 +32,7 @@ def judge_day(m, d):
         return True
     return False
  
- if judge_day(m, d):
+if judge_day(m, d):
     print("Yes")
 else:
     print("No")
