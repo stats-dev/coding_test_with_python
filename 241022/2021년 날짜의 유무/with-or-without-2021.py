@@ -1,4 +1,4 @@
-m, d = map(int, input().split())
+# M, D = map(int, input().split())
 
 # def is_month(m, d):
 #     throne = [1,3,5,7,8,10,12]
@@ -17,13 +17,13 @@ m, d = map(int, input().split())
 # else:
 #     print("No")
 
-
+m, d = map(int, input().split())
 
 def last_day_number(m):
     thr = [4,6,9,11]
     if m == 2:
         return 28
-    elif m in thr:
+    if m in thr:
         return 30
     return 31
 
