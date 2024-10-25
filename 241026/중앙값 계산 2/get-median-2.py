@@ -5,9 +5,11 @@ lst = list(map(int, input().split()))
 
 odd_lst = []
 
-for idx in range(n):
-    if idx % 2 == 0:
-        odd_lst.append(lst[idx // 2])
+for idx in range(1, n+1, 2):
+    lst1 = lst[:idx]
+    lst1.sort()
+    odd_lst.append(lst1[idx // 2])
+    # print(odd_lst)
 
 for e in odd_lst:
     print(e, end = " ")
