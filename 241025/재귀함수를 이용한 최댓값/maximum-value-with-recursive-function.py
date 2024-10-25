@@ -6,11 +6,11 @@ def rec_max(n):
     if n == 0:
         return arr[0]
 
-    
-    if arr[n] > rec_max(n-1):
+    test = rec_max(n-1)
+    if arr[n] > test:
         return arr[n]
     else:
-        return rec_max(n-1)
+        return test
         
     
 print(rec_max(n))
