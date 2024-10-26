@@ -8,10 +8,10 @@ class Codename:
 
 codenames = [Codename(*tuple(input().split())) for _ in range(5)]
 
-min_cn = codenames[0]
+min_cn = Codename()
 
 for i in range(5):
-    if int(codenames[i].score) < int(codenames[0].score):
+    if int(codenames[i].score) < int(codenames[i-1].score):
         min_cn = codenames[i]
 
 print(min_cn.codename, min_cn.score, end= " ")
