@@ -10,8 +10,10 @@ codenames = [Codename(*tuple(input().split())) for _ in range(5)]
 
 min_cn = Codename()
 
-for i in range(5):
-    if int(codenames[i].score) < int(codenames[i-1].score):
-        min_cn = codenames[i]
+if codenames:
+    min_cn = codenames[0]
+    for code in codenames:
+        if int(code.score) < int(min_cn.score):
+            min_cn = code
 
 print(min_cn.codename, min_cn.score, end= " ")
