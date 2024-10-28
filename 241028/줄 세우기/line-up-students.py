@@ -29,7 +29,7 @@ for student in students:
 for idx, s in enumerate(arr, start=1):
     s.rank = idx
 
-arr.sort(key = lambda x : (-x.height, -x.weight, -x.rank))
+arr.sort(key = lambda x : (-x.height, -x.weight, x.rank))
 
 for s in arr:
     print(s.height, s.weight, s.rank)
