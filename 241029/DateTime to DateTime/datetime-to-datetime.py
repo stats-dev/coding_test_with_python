@@ -6,6 +6,10 @@ elapsed_days = 0
 
 if a < day:
     print(-1)
+elif b < hour:
+    print(-1)
+elif c < mins:
+    print(-1)
 else:
     print((a - day) * 24 * 60 + (b - hour) * 60 + (c - mins))
 
