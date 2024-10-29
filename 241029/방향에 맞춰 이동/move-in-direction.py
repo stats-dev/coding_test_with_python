@@ -4,7 +4,7 @@
 
 # nx, ny = x + dx[num], y + dy[num]
 
-n = int(input())
+# n = int(input())
 
 
 x, y = 0, 0
