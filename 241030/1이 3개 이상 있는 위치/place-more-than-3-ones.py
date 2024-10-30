@@ -20,7 +20,7 @@ arr = [
 
 dxs, dys = [0, 1, 0, -1], [1, 0, -1, 0]
 
-xys = [(x, y) for x, row in enumerate(arr) for y, val in enumerate(row) if val == 1]
+xys = [(x, y) for x, row in enumerate(arr) for y, val in enumerate(row) if val == 0]
 
 def in_range(x, y):
     return 0 <= x and x < n and 0 <= y and y < n
