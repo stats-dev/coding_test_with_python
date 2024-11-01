@@ -1,4 +1,4 @@
-n, t = map(int, input().split())
+n, t = tuple(map(int, input().split()))
 
 r, c, d = input().split()
 
@@ -30,7 +30,7 @@ for _ in range(t):
         r, c = nx, ny
     ##벽
     else:
-        mdir = mdir - 3
+        mdir = 3 - mdir
 
 print(r + 1, c + 1)
 
