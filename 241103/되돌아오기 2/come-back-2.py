@@ -21,10 +21,11 @@ for d in direcs:
         y += dys[dir_num]
     elif d == 'L':
         dir_num = (dir_num - 1) % 4
-    else:
+    elif d == 'R':
         dir_num = (dir_num + 1) % 4
  
     if x == 0 and y == 0:
         answer = time
+        break
 
 print(answer)
