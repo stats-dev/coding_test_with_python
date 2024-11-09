@@ -50,6 +50,6 @@ for i in range(2, (n * m) + 1):
 for i in range(n):
     for j in range(m):
         if arr[i][j] > 26:
-            arr[i][j] %= 26
+            arr[i][j] %= 25
         print(chr(arr[i][j] + ord('A') - 1), end = " ")
     print()
