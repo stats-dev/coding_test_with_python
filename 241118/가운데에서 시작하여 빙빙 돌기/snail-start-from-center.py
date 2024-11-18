@@ -43,7 +43,7 @@ curr_x, curr_y = n // 2, n // 2
 move_dir, move_num = 0, 1
 
 def in_range(x, y):
-    return 0 <= x and x < n and 0 <= y and y < not
+    return 0 <= x and x < n and 0 <= y and y < n
 
 def move():
     global curr_x, curr_y
