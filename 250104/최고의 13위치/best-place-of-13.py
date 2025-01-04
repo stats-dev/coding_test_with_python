@@ -4,10 +4,17 @@ grid = [list(map(int, input().split())) for _ in range(n)]
 # Write your code here!
 max_cnt = 0
 
+# for i in range(n):
+#     for j in range(n - 1):
+#         for k in range(n - 2):
+#             max_cnt = max(max_cnt, grid[i][j] + grid[i][j + 1] + grid[j][k + 2])
+
+# print(max_cnt)
+
 for i in range(n):
-    for j in range(n - 1):
-        for k in range(n - 2):
-            max_cnt = max(max_cnt, grid[i][j] + grid[i][j + 1] + grid[j][k + 2])
+    for j in range(n - 2):
+        cnt = grid[i][j] + grid[i][j + 1] + grid[i][j + 2]
+        max_cnt = max(max_cnt, cnt)
 
 print(max_cnt)
 
