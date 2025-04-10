@@ -1,3 +1,3 @@
 N = float(input())
 
-print(N)
+print(round(N,2))
