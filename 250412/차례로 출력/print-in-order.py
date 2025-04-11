@@ -1,2 +1,2 @@
-for _ in range(5,17+1):
-    print(_)
+for i in range(5,17+1):
+    print(i, end=' ')
