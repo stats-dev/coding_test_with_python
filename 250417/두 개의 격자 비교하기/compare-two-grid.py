@@ -11,12 +11,12 @@ mat2 = [
     ]
 
 newmat = [
-    [1 for _ in range(n)]
+    [1 for _ in range(m)]
     for _ in range(n)
 ]
 
 for i in range(n):
-    for j in range(n):
+    for j in range(m):
         if mat1[i][j] == mat2[i][j]:
             newmat[i][j] = 0
         print(newmat[i][j], end=" ")
