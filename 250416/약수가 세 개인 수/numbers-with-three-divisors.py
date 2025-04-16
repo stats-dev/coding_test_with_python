@@ -3,7 +3,7 @@ start, end = map(int, input().split())
 total = 0
 
 # Please write your code here.
-for i in range(start, end):
+for i in range(start, end+1):
     cnt = 0
     
     for j in range(1, i+1):
@@ -12,5 +12,5 @@ for i in range(start, end):
     
     if cnt == 3:
         total += 1
-        
+
 print(total)
